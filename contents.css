@@ -1,0 +1,81 @@
+#backgroundImg {
+    margin: auto;
+    width: 80%;
+}
+
+#myProfile {
+    width: 50%;
+    border-radius: 50%;
+}
+
+.contents {
+    display: flex;
+}
+
+.contents .profile > h2 {
+    color: white;
+    font-size: 50px;
+    font-family:Arial, Helvetica, sans-serif;
+    line-height: 80px;
+}
+
+.contents .profile {
+    background-color: #444;
+    position: fixed;
+    left: 0;
+    display: inline-block;
+    height: 90%;
+    width: 20%;
+    text-align: center;
+    box-shadow: 10px 10px 10px #999;
+}
+
+.contents .profile .contact {
+    display: inline-block;
+    width: 80%;
+    height: 60%;
+    background-color: #eee;
+    margin: 5% 0;
+    border-radius: 30px;
+    padding: 20% 10%;
+    box-sizing: border-box;
+}
+
+.contents .profile .contact .contact-info{
+    text-align: left;
+    padding: 5% 10%;
+    /* display: flex; */
+    
+    /* background-color: red; */
+}
+
+.contents .profile .contact .contact-info-logo{
+    width: 15%;
+    float: left;
+}
+
+.contents .profile .contact p{
+    background-color: white;
+}
+
+.contents .content-body {
+    margin-left: 20%;
+    background-color: white;
+    width: 80%;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.contents .content-body h2 {
+    font-size: 46px;
+    margin: 16px 0;
+    font-weight: bold;
+    color: #222;
+}
+
+.contents .content-body .wrap {
+    margin: 2% 5%;
+}
+
+.contents .content-body .wrap p {
+    margin: 16px 0;
+}

@@ -1,0 +1,45 @@
+.header {
+    display: flex;
+    background-color: #333;
+    padding: 6px 0;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.header .icon img{
+    margin: 6px 10px;
+    display: inline-block;
+    text-align: center;
+    width: 50px;
+    height: 50px;
+}
+
+.header a img{
+    border-radius: 5px;
+}
+
+.header nav {
+    /* 要加這行才會真的讓<nav>底下的文字對齊右邊 */
+    width: 100%;
+    text-align: right;
+    display: inline-block;
+    font-size: 0;
+    margin-right: 50px;
+    /* display: flex; */
+}
+
+.header nav a {
+    text-decoration: none;
+    color: white;
+    padding: 0px 10px;
+    line-height: 62px;
+    font-size: large;
+    display: inline-block;
+    border-radius: 10px;
+}
+
+.header nav a:hover {
+    background-color: #666;
+}
