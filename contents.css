@@ -6,6 +6,7 @@
 #myProfile {
     width: 50%;
     border-radius: 50%;
+    box-shadow: 3px 3px 3px #999;
 }
 
 .contents {
@@ -13,49 +14,68 @@
 }
 
 .contents .profile > h2 {
-    color: white;
-    font-size: 50px;
+    color: #333;
+    font-size: 3em;
     font-family:Arial, Helvetica, sans-serif;
     line-height: 80px;
+    /* background-color: blue; */
 }
 
 .contents .profile {
-    background-color: #444;
+    background-color: #ddd;
     position: fixed;
     left: 0;
     display: inline-block;
-    height: 90%;
+    height: 100%;
     width: 20%;
     text-align: center;
     box-shadow: 10px 10px 10px #999;
 }
-
+.block {
+    display: block;
+}
 .contents .profile .contact {
     display: inline-block;
     width: 80%;
     height: 60%;
-    background-color: #eee;
-    margin: 5% 0;
-    border-radius: 30px;
-    padding: 20% 10%;
+    background-color: #ddd;
+    margin: 15% 0;
+    /* border-radius: 30px; */
+    padding: 15% 5%;
     box-sizing: border-box;
+    border-top: solid #aaa;
+    /* box-shadow:inset 10px 10px 10px #999; */
 }
 
-.contents .profile .contact .contact-info{
-    text-align: left;
-    padding: 5% 10%;
-    /* display: flex; */
-    
-    /* background-color: red; */
+.contents .profile .contact a {
+    display: flex;
+    text-decoration: none;
+    text-align: center;
+    padding: 5% 5%;
 }
 
-.contents .profile .contact .contact-info-logo{
-    width: 15%;
-    float: left;
+.contents .profile .contact a img{
+    width: 20%;
 }
 
-.contents .profile .contact p{
-    background-color: white;
+.contents .profile .contact-info-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.contents .profile .contact a p{
+    margin-left: 10px;
+    display: inline-block;
+    color: #333;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 100%;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.contents .profile .contact a p:hover{
+    color: #888;
 }
 
 .contents .content-body {
@@ -63,11 +83,12 @@
     background-color: white;
     width: 80%;
     font-family: Arial, Helvetica, sans-serif;
+    padding: 0 5%;
 }
 
 .contents .content-body h2 {
     font-size: 46px;
-    margin: 16px 0;
+    margin: 30px 0;
     font-weight: bold;
     color: #222;
 }
