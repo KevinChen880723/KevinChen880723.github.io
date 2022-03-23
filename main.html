@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="./contents.css">
     <style>
         body {
-            padding-top: 77px;
+            padding-top: 3%;
         }
     </style>
 </head>
@@ -19,17 +19,27 @@
         <!-- <div class="icon">Home</div> -->
         <a href="#" class="icon"><img src="./img/home_icon.jpg" alt="icon"></a>
         <nav>
-            <a href="#">About Me</a>
-            <a href="#">Work Experiences</a>
-            <a href="#">Skills</a>
-            <a href="#">Portfolios</a>
-            <a href="#">Learning Notes</a>
+            <a href="#">
+                <div class="nav-button-container">About Me</div>
+            </a>
+            <a href="#">
+                <div class="nav-button-container">Work Experience</div>
+            </a>
+            <a href="#">
+                <div class="nav-button-container">Skills</div>
+            </a>
+            <a href="#">
+                <div class="nav-button-container">Portfolios</div>
+            </a>
+            <a href="#">
+                <div class="nav-button-container">Learning Notes</div>
+            </a>
         </nav>
     </div>
     
     <div class="contents">
         <div class="profile">
-            <h2>Profile</h2>
+            <h2>Yu-Kai Chen</h2>
             <img src="./img/personal.jpeg" alt="personal profile" id="myProfile">
             <div class="contact">
                 <a href="https://www.linkedin.com/in/yu-kai-chen-0740081a1">
@@ -54,19 +64,39 @@
                 </a>
             </div>
         </div>
+
         <div class="content-body">
             <div class="wrap">
                 <h2>About Me</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi, at consequuntur. Praesentium unde illo qui? Explicabo aspernatur accusamus eum quibusdam nulla illum, repellendus quas quo voluptates dolores voluptas unde numquam?</p>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi, at consequuntur. Praesentium unde illo qui? Explicabo aspernatur accusamus eum quibusdam nulla illum, repellendus quas quo voluptates dolores voluptas unde numquam?</p>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi, at consequuntur. Praesentium unde illo qui? Explicabo aspernatur accusamus eum quibusdam nulla illum, repellendus quas quo voluptates dolores voluptas unde numquam?</p>
+                <p>Hello, I'm an M.S. student at the electronic engineering department of NTUST. In my undergraduate, I learned numerous skills related to information technology such as IoT, AWS, embedded systems, machine learning, deep learning, and experience in lots of programming languages. In the graduate program, I'm doing deep learning research related to ADAS, which can make the self-driving car safer. Besides, I have two internship experiences in CKmates and ITRI.</p>
             </div>
 
-            <div class="wrap">
-                <h2>Work Experiences</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi, at consequuntur. Praesentium unde illo qui? Explicabo aspernatur accusamus eum quibusdam nulla illum, repellendus quas quo voluptates dolores voluptas unde numquam?</p>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi, at consequuntur. Praesentium unde illo qui? Explicabo aspernatur accusamus eum quibusdam nulla illum, repellendus quas quo voluptates dolores voluptas unde numquam?</p>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi, at consequuntur. Praesentium unde illo qui? Explicabo aspernatur accusamus eum quibusdam nulla illum, repellendus quas quo voluptates dolores voluptas unde numquam?</p>
+            <div class="work-experience">
+                <h2>Work Experience</h2>
+                <div class="work-experiences-contents">
+                    <div class="companys">
+                        <figure>
+                            <div class="hr-div border-hr"><hr></div>
+                            <div class="company-container">
+                                <img src="./img/CKmates_logo.png" alt="CKmates Logo" class="company-icon">
+                                <p class="date">2019/09 - 2020/01</p>
+                                <img src="./img/chat-box.png" alt="Chat Box" class="chat-box">
+                            </div>
+                            <div class="hr-div"><hr></div>
+                            <div class="company-container">
+                                <img src="./img/ITRI_logo.png" alt="ITRI Logo" class="company-icon">
+                                <p class="date">2021/03 - 2021/08</p>
+                                <img src="./img/chat-box.png" alt="Chat Box" class="chat-box">
+                            </div>
+                            <div class="hr-div border-hr"><hr></div>
+
+                            <figcaption style="opacity: 0; position: absolute;">The figure shows the work experience</figcaption>
+                        </figure>
+                    </div>
+                </div>
+                <div class="description">
+                    During the internship in CKmates, I studied AWS Well-Architected Framework and made an IoT project. I used AWS IoT Core, AWS Lambda, and AWS API Gateway to develop the backend while using HTML, CSS, and Javascript to develop the frontend.During the internship in CKmates, I studied AWS Well-Architected Framework and made an IoT project. I used AWS IoT Core, AWS Lambda, and AWS API Gateway to develop the backend while using HTML, CSS, and Javascript to develop the frontend.
+                </div>
             </div>
 
             <div class="wrap">

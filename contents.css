@@ -3,22 +3,16 @@
     width: 80%;
 }
 
-#myProfile {
-    width: 50%;
-    border-radius: 50%;
-    box-shadow: 3px 3px 3px #999;
-}
-
 .contents {
     display: flex;
 }
 
-.contents .profile > h2 {
-    color: #333;
-    font-size: 3em;
-    font-family:Arial, Helvetica, sans-serif;
-    line-height: 80px;
-    /* background-color: blue; */
+/* ========================= Contact Information =============================== */
+
+#myProfile {
+    width: 50%;
+    border-radius: 50%;
+    box-shadow: 3px 3px 3px #999;
 }
 
 .contents .profile {
@@ -31,21 +25,32 @@
     text-align: center;
     box-shadow: 10px 10px 10px #999;
 }
+
+.contents .profile > h2 {
+    color: #333;
+    font-size: 2em;
+    font-family:Arial, Helvetica, sans-serif;
+    line-height: 80px;
+    font-weight: bold;
+}
+
 .block {
     display: block;
 }
+
 .contents .profile .contact {
     display: inline-block;
     width: 80%;
-    height: 60%;
+    height: auto;
     background-color: #ddd;
     margin: 15% 0;
-    /* border-radius: 30px; */
-    padding: 15% 5%;
+    padding: 5% 5%;
     box-sizing: border-box;
     border-top: solid #aaa;
     /* box-shadow:inset 10px 10px 10px #999; */
 }
+
+/* ========================= One Contact Way =============================== */
 
 .contents .profile .contact a {
     display: flex;
@@ -78,6 +83,8 @@
     color: #888;
 }
 
+/* ============================= Main Contents ================================== */
+
 .contents .content-body {
     margin-left: 20%;
     background-color: white;
@@ -98,5 +105,109 @@
 }
 
 .contents .content-body .wrap p {
-    margin: 16px 0;
+    margin: 18px 0;
+    line-height: 27px;
+}
+
+.work-experience {
+    position: relative;
+}
+
+.work-experiences-contents {
+    margin: 10% 0;
+    display: flex;
+}
+
+.work-experiences-contents .companys {
+    width: 100%;
+    display: inline-flex;
+    /* background-color: blue; */
+}
+
+.work-experiences-contents figure {
+    display: flex;
+    /* background-color: blue; */
+}
+
+/* .companys .company-div {
+    background-color: red;
+    width: 100%;
+} */
+
+.companys .company {
+    width: 100%;
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.work-experiences-contents .company-icon {
+    width: 100%;
+    border: solid #aaa 2px;
+    border-radius: 30px;
+    padding: 5%;
+    /* background-color: orange; */
+}
+
+.company-container {
+    /* background-color: green; */
+    display: inline-flex;
+    position: relative;
+    width: 100%;
+}
+
+.company-container .date {
+    display: inline;
+    position: absolute;
+    top: 110%;
+    left: 0%;
+    width: 100%;
+    text-align: center;
+    /* background-color: greenyellow; */
+}
+
+.company-container .description {
+    position: absolute;
+}
+
+.company-container .chat-box {
+    position: absolute;
+    width: 100%;
+    bottom: 110%;
+    opacity: 0;
+}
+
+/* 設定當我碰觸到company-icon時，控制chat-box屬性 */
+.work-experiences-contents:hover + .description{
+    opacity: 1;
+    position: none;
+}
+
+.hr-div {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.border-hr {
+    width: 50%;
+}
+
+.hr-div hr {
+    width: 100%;
+    color: #aaa;
+}
+
+.work-experience .description {
+    margin: 0 10%;
+    padding: 20px;
+    line-height: 27px;
+    text-align: center;
+    border: solid #aaa;
+    border-radius: 30px;
+    box-shadow: 3px 3px 3px #ccc;
+    opacity: 0;
+    transition: opacity 0.2s 0s ease, position 0.2s 0s ease;
+    /* position: absolute; */
 }
