@@ -66,13 +66,13 @@
     font-weight: bold;
 }
 
-/* ========================= Contact Information =============================== */
+/* ========================= profile-info Information =============================== */
 
 .block {
     display: block;
 }
 
-.contents .profile .contact {
+.contents .profile .profile-info {
     display: inline-block;
     width: 80%;
     height: auto;
@@ -83,26 +83,26 @@
     /* border-top: solid #aaa; */
 }
 
-.contents .profile .contact .all-contact-info-container {
+.contents .profile .profile-info .all-profile-info-info-container {
     display: flex;
     justify-content: center;
 }
 
-/* ========================= One Contact Way =============================== */
+/* ========================= One profile-info Way =============================== */
 
-.contents .profile .contact a {
+.contents .profile .profile-info a {
     display:inline-flex;
     text-decoration: none;
     justify-content: left;
     margin: 4% 0;
 }
 
-.contents .profile .contact a img{
+.contents .profile .profile-info a img{
     width: 50px;
     transition: opacity 0.3s 0s ease;
 }
 
-.contents .profile .contact a img:hover{
+.contents .profile .profile-info a img:hover{
     opacity: 0.5;
 }
 /* ============================= Main Contents ================================== */

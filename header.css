@@ -12,8 +12,13 @@
     z-index: 1;
 }
 
-.header .icon img{
-    margin: 6px 10px;
+.header .home-icon-container {
+    display: flex;
+    /* flex-direction: column;
+    justify-content: center; */
+}
+
+.header .home-icon img{
     display: inline-block;
     text-align: center;
     width: auto;
