@@ -10,12 +10,12 @@
 #myProfile {
     width: 50%;
     border-radius: 50%;
-    box-shadow: 0px 6px 6px #999;
+    box-shadow: 0px 6px 6px #aaa;
     margin: 7.5% 0;
 }
 
 .contents .profile {
-    background-color: #ddd;
+    background-color: #eee;
     position: fixed;
     left: 0;
     display: inline-block;
@@ -60,6 +60,7 @@
     font-family:Arial, Helvetica, sans-serif;
     line-height: 25px;
     text-align: middle;
+    font-weight: 300;
 }
 
 .profile .schools .one-school .school-name {
@@ -76,34 +77,33 @@
     display: inline-block;
     width: 80%;
     height: auto;
-    background-color: #ddd;
+    background-color: #eee;
     margin: 0 0 7.5%;
     /* padding: 5% 5%; */
     box-sizing: border-box;
     /* border-top: solid #aaa; */
 }
 
-.contents .profile .profile-info .all-profile-info-info-container {
-    display: flex;
-    justify-content: center;
-}
-
 /* ========================= One profile-info Way =============================== */
 
+.contents .profile .profile-info .all-contact-info-container {
+    display: flex;
+    justify-content: space-around;
+}
+
 .contents .profile .profile-info a {
-    display:inline-flex;
     text-decoration: none;
-    justify-content: left;
     margin: 4% 0;
+    width: 20%;
+    transition: width 0.3s 0s ease;
+}
+
+.contents .profile .profile-info a:hover {
+    width: 30%;
 }
 
 .contents .profile .profile-info a img{
-    width: 50px;
-    transition: opacity 0.3s 0s ease;
-}
-
-.contents .profile .profile-info a img:hover{
-    opacity: 0.5;
+    width: 100%;
 }
 /* ============================= Main Contents ================================== */
 
