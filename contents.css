@@ -179,13 +179,6 @@
     text-align: center;
 }
 
-.company-container .chat-box {
-    position: absolute;
-    width: 100%;
-    bottom: 110%;
-    opacity: 0;
-}
-
 .hr-div {
     width: 100%;
     display: flex;
@@ -199,48 +192,37 @@
     /* box-shadow: 0px 2px 2px #ccc; */
 }
 
-.work-experience #ckmates-description {
+.work-experience .description {
     line-height: 27px;
     text-align: center;
-    border: solid #aaa;
-    border-radius: 30px;
-    box-shadow: 3px 3px 3px #ccc;
-    opacity: 0;
+    border: solid #aaa 0px;
+    border-radius: 20px;
+    box-shadow: 4px 4px 4px #ccc;
+    background-color: #666;
+    color: #fff;
     transition: height  0.2s 0s ease-in-out, 
                 opacity 0.2s 0.2s ease-in-out, 
-                margin  0.2s 0.2s ease-in-out, 
+                border  0.2s 0.2s ease-in-out, 
                 padding 0.2s 0.2s ease-in-out;
     position: relative;
-    height: 0;
     margin: 0 10%;
+    opacity: 0;
+    height: 0;
     padding: 0px 20px;
 }
 
-.work-experience #itri-description {
-    line-height: 27px;
-    text-align: center;
-    border: solid #aaa;
-    border-radius: 30px;
-    box-shadow: 3px 3px 3px #ccc;
-    opacity: 0;
-    transition: height  0.2s 0s ease-in-out, 
-                opacity 0.2s 0.2s ease-in-out, 
-                margin  0.2s 0.2s ease-in-out, 
-                padding 0.2s 0.2s ease-in-out;
-    position: relative;
-    height: 0;
-    margin: 0 10%;
-    padding: 0px 20px;
+.work-experience .description p {
+    opacity: 1;
 }
 
 .work-experience .key-word {
-    font-size: 21px;
-    font-weight: 300;
-    color: #00A0E9;
+    font-size: 16px;
+    font-weight: bold;
+    color: #65cbfa;
 }
 
 .work-experience .important-sentence {
-    font-size: 21px;
-    font-weight: 300;
-    color: #8000e9;
+    font-size: 16px;
+    font-weight: bold;
+    color: #b1b9ff;
 }
