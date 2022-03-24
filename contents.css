@@ -114,14 +114,21 @@
     padding: 0 5%;
 }
 
-.contents .content-body h2 {
+.wrap h2 {
     font-size: 46px;
     margin: 30px 0;
     font-weight: bold;
     color: #222;
 }
 
-.contents .content-body .wrap, .work-experience {
+.wrap h3 {
+    font-size: 32px;
+    margin: 30px 0;
+    font-weight: bold;
+    color: #444;
+}
+
+.contents .content-body .wrap, #WorkExperience {
     margin: 2% 5%;
 }
 
@@ -130,7 +137,7 @@
     line-height: 27px;
 }
 
-.work-experience {
+#WorkExperience {
     position: relative;
 }
 
@@ -192,7 +199,7 @@
     /* box-shadow: 0px 2px 2px #ccc; */
 }
 
-.work-experience .description {
+#WorkExperience .description {
     line-height: 27px;
     text-align: center;
     border: solid #aaa 0px;
@@ -211,18 +218,86 @@
     padding: 0px 20px;
 }
 
-.work-experience .description p {
+#WorkExperience .description p {
     opacity: 1;
 }
 
-.work-experience .key-word {
+#WorkExperience .key-word {
     font-size: 16px;
     font-weight: bold;
     color: #65cbfa;
 }
 
-.work-experience .important-sentence {
+#WorkExperience .important-sentence {
     font-size: 16px;
     font-weight: bold;
     color: #b1b9ff;
+}
+
+/* ========================== Skills =========================== */
+
+#Skills .progress-bar{
+    display: block;
+    flex-direction: column;
+    width: 100%;
+}
+
+.progress-bar .a-skill {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 70px;
+    width: 100%;
+    padding: 10px 2%;
+    border-radius: 30px;
+    background-color: #eee;
+    box-sizing: border-box;
+    margin: 1% 0;
+}
+
+.a-skill .skill-progress {
+    width: 90%;
+    border-radius: 20px;
+    padding: 5px 2%;
+    height: 95%;
+    margin: 1% 0;
+    display: flex;
+    justify-content: left;
+    background-color: #ccc;
+    box-sizing: border-box;
+    position: relative;
+}
+
+#html-progress, #css-progress {
+    width: 50%;
+}
+
+#javascript-progress {
+    width: 40%;
+}
+
+.a-skill .skill-icon {
+    height: 100%;
+    width: auto;
+}
+
+.a-skill .skill-name-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 1%;
+}
+
+.skill-progress .percentage-container {
+    position: absolute;
+    height: 100%;
+    right: -40px;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.progress-bar .skill-percentage {
+    font-family: Arial, Helvetica, sans-serif;
 }
