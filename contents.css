@@ -146,6 +146,7 @@
 
 .work-experiences-contents figure {
     display: flex;
+    width: 100%;
 }
 
 .companys .company {
