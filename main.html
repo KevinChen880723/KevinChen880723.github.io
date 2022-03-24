@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="./reset.css">
     <link rel="stylesheet" href="./header.css">
     <link rel="stylesheet" href="./contents.css">
+    <script src= './main.js'></script>
     <style>
         body {
             padding-top: 3%;
@@ -17,22 +18,22 @@
 <body>
     <div class="header">
         <!-- <div class="icon">Home</div> -->
-        <a href="#" class="icon"><img src="./img/home_icon.jpg" alt="icon"></a>
+        <a href="#" class="icon"><img src="./img/home_icon.png" alt="icon"></a>
         <nav>
             <a href="#">
-                <div class="nav-button-container">About Me</div>
+                <div class="nav-button-container"><div class="nav-word-container">About Me</div></div>
             </a>
             <a href="#">
-                <div class="nav-button-container">Work Experience</div>
+                <div class="nav-button-container"><div class="nav-word-container">Work Experience</div></div>
             </a>
             <a href="#">
-                <div class="nav-button-container">Skills</div>
+                <div class="nav-button-container"><div class="nav-word-container">Skills</div></div>
             </a>
             <a href="#">
-                <div class="nav-button-container">Portfolios</div>
+                <div class="nav-button-container"><div class="nav-word-container">Portfolios</div></div>
             </a>
             <a href="#">
-                <div class="nav-button-container">Learning Notes</div>
+                <div class="nav-button-container"><div class="nav-word-container">Learning Notes</div></div>
             </a>
         </nav>
     </div>
@@ -42,26 +43,43 @@
             <h2>Yu-Kai Chen</h2>
             <img src="./img/personal.jpeg" alt="personal profile" id="myProfile">
             <div class="contact">
-                <a href="https://www.linkedin.com/in/yu-kai-chen-0740081a1">
-                    <img src="./img/LinkedIn_logo.png" alt="LinkedIn Logo">
+                <h3>Education</h3>
+                <hr>
+                <div class="all-contact-info-container">
                     <div class="contact-info-text">
-                        <p>: LinkedIn</p>
+                        <p>Master: Taiwan Tech </p>
                     </div>
-                </a>
 
-                <a href="https://github.com/KevinChen880723">
-                    <img src="./img/GitHub-logo.png" alt="GitHub Logo">
                     <div class="contact-info-text">
-                        <p>: GitHub</p>
+                        <p>Under-graduate: Taiwan Tech</p>
                     </div>
-                </a>
-
-                <a href="mailto:m11002128@mail.ntust.edu.tw">
-                    <img src="./img/mail.icon.png" alt="Mail Logo">
-                    <div class="contact-info-text">
-                        <p>: E-mail</p>
-                    </div>
-                </a>
+                </div>
+            </div>
+            <div class="contact">
+                <h3>Contact</h3>
+                <hr>
+                <div class="all-contact-info-container">
+                    <a href="https://www.linkedin.com/in/yu-kai-chen-0740081a1">
+                        <img src="./img/LinkedIn_logo.png" alt="LinkedIn Logo">
+                        <div class="contact-info-text">
+                            <p>: LinkedIn</p>
+                        </div>
+                    </a>
+    
+                    <a href="https://github.com/KevinChen880723">
+                        <img src="./img/GitHub-logo.png" alt="GitHub Logo">
+                        <div class="contact-info-text">
+                            <p>: GitHub</p>
+                        </div>
+                    </a>
+    
+                    <a href="mailto:m11002128@mail.ntust.edu.tw">
+                        <img src="./img/mail.icon.png" alt="Mail Logo">
+                        <div class="contact-info-text">
+                            <p>: E-mail</p>
+                        </div>
+                    </a>
+                </div>
             </div>
         </div>
 
@@ -73,29 +91,31 @@
 
             <div class="work-experience">
                 <h2>Work Experience</h2>
-                <div class="work-experiences-contents">
-                    <div class="companys">
-                        <figure>
-                            <div class="hr-div border-hr"><hr></div>
-                            <div class="company-container">
-                                <img src="./img/CKmates_logo.png" alt="CKmates Logo" class="company-icon">
-                                <p class="date">2019/09 - 2020/01</p>
-                                <img src="./img/chat-box.png" alt="Chat Box" class="chat-box">
-                            </div>
-                            <div class="hr-div"><hr></div>
-                            <div class="company-container">
-                                <img src="./img/ITRI_logo.png" alt="ITRI Logo" class="company-icon">
-                                <p class="date">2021/03 - 2021/08</p>
-                                <img src="./img/chat-box.png" alt="Chat Box" class="chat-box">
-                            </div>
-                            <div class="hr-div border-hr"><hr></div>
-
-                            <figcaption style="opacity: 0; position: absolute;">The figure shows the work experience</figcaption>
-                        </figure>
+                <div class="work-experience-content-container">
+                    <div class="work-experiences-contents">
+                        <div class="companys">
+                            <figure>
+                                <div class="hr-div border-hr"><hr></div>
+                                <div class="company-container">
+                                    <img src="./img/CKmates_logo.png" alt="CKmates Logo" class="company-icon" id="ckmates-icon">
+                                    <p class="date">2019/09 - 2020/01</p>
+                                    <img src="./img/chat-box.png" alt="Chat Box" class="chat-box">
+                                </div>
+                                <div class="hr-div"><hr></div>
+                                <div class="company-container">
+                                    <img src="./img/ITRI_logo.png" alt="ITRI Logo" class="company-icon" id="itri-icon">
+                                    <p class="date">2021/03 - 2021/08</p>
+                                    <img src="./img/chat-box.png" alt="Chat Box" class="chat-box">
+                                </div>
+                                <div class="hr-div border-hr"><hr></div>
+    
+                                <figcaption style="opacity: 0; position: absolute;">The figure shows the work experience</figcaption>
+                            </figure>
+                        </div>
                     </div>
-                </div>
-                <div class="description">
-                    During the internship in CKmates, I studied AWS Well-Architected Framework and made an IoT project. I used AWS IoT Core, AWS Lambda, and AWS API Gateway to develop the backend while using HTML, CSS, and Javascript to develop the frontend.During the internship in CKmates, I studied AWS Well-Architected Framework and made an IoT project. I used AWS IoT Core, AWS Lambda, and AWS API Gateway to develop the backend while using HTML, CSS, and Javascript to develop the frontend.
+                    <div class="description" id="work-description">
+                        During the internship in CKmates, I studied AWS Well-Architected Framework and made an IoT project. I used AWS IoT Core, AWS Lambda, and AWS API Gateway to develop the backend while using HTML, CSS, and Javascript to develop the frontend.During the internship in CKmates, I studied AWS Well-Architected Framework and made an IoT project. I used AWS IoT Core, AWS Lambda, and AWS API Gateway to develop the backend while using HTML, CSS, and Javascript to develop the frontend.
+                    </div>
                 </div>
             </div>
 
