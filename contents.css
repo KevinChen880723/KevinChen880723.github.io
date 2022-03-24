@@ -79,9 +79,7 @@
     height: auto;
     background-color: #eee;
     margin: 0 0 7.5%;
-    /* padding: 5% 5%; */
     box-sizing: border-box;
-    /* border-top: solid #aaa; */
 }
 
 /* ========================= One profile-info Way =============================== */
@@ -105,6 +103,7 @@
 .contents .profile .profile-info a img{
     width: 100%;
 }
+
 /* ============================= Main Contents ================================== */
 
 .contents .content-body {
@@ -133,52 +132,41 @@
 
 .work-experience {
     position: relative;
-    /* background-color: blue; */
 }
 
 .work-experiences-contents {
     margin: 10% 0;
     display: flex;
-    /* background-color: blue; */
 }
 
 .work-experiences-contents .companys {
     width: 100%;
     display: inline-flex;
-    /* background-color: blue; */
 }
 
 .work-experiences-contents figure {
     display: flex;
-    /* background-color: blue; */
 }
-
-/* .companys .company-div {
-    background-color: red;
-    width: 100%;
-} */
 
 .companys .company {
     width: 100%;
     display: inline-flex;
     flex-direction: column;
     justify-content: center;
-    /* background-color: blue; */
 }
 
 .work-experiences-contents #ckmates-icon, #itri-icon {
     width: 100%;
-    border: solid #aaa 2px;
+    border: solid #888 2px;
     border-radius: 30px;
     padding: 5%;
-    /* background-color: blue; */
+    box-shadow: 0px 3px 3px #ccc;
 }
 
 .company-container {
     display: inline-flex;
     position: relative;
     width: 100%;
-    /* background-color: blue; */
 }
 
 .company-container .date {
@@ -188,11 +176,6 @@
     left: 0%;
     width: 100%;
     text-align: center;
-    /* background-color: blue; */
-}
-
-.company-container .description {
-    position: absolute;
 }
 
 .company-container .chat-box {
@@ -207,41 +190,56 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    /* background-color: blue; */
 }
-
-/* .border-hr {
-    width: 50%;
-} */
 
 .hr-div hr {
     width: 100%;
-    color: #aaa;
-    /* background-color: blue; */
+    color: #ccc;
+    /* box-shadow: 0px 2px 2px #ccc; */
 }
 
-.work-experience .description {
+.work-experience #ckmates-description {
     line-height: 27px;
     text-align: center;
     border: solid #aaa;
     border-radius: 30px;
     box-shadow: 3px 3px 3px #ccc;
     opacity: 0;
-    transition: height 0.1s 0s ease-in-out, opacity 0.2s 0.1s ease-in-out, margin 0.2s 0.1s ease-in-out, padding 0.2s 0.1s ease-in-out;
+    transition: height  0.2s 0s ease-in-out, 
+                opacity 0.2s 0.2s ease-in-out, 
+                margin  0.2s 0.2s ease-in-out, 
+                padding 0.2s 0.2s ease-in-out;
     position: relative;
     height: 0;
     margin: 0 10%;
     padding: 0px 20px;
 }
 
-/* 設定當我碰觸到company-icon時，控制chat-box屬性 */
-.work-experiences-contents:hover + .description{
-    opacity: 1;
+.work-experience #itri-description {
+    line-height: 27px;
+    text-align: center;
+    border: solid #aaa;
+    border-radius: 30px;
+    box-shadow: 3px 3px 3px #ccc;
+    opacity: 0;
+    transition: height  0.2s 0s ease-in-out, 
+                opacity 0.2s 0.2s ease-in-out, 
+                margin  0.2s 0.2s ease-in-out, 
+                padding 0.2s 0.2s ease-in-out;
+    position: relative;
+    height: 0;
     margin: 0 10%;
-    padding: 20px;
-    height: 100%;
+    padding: 0px 20px;
 }
 
-.ckmates-icon:hover ~ .itri-icon {
-    background-color: blue;
+.work-experience .key-word {
+    font-size: 21px;
+    font-weight: 300;
+    color: #00A0E9;
+}
+
+.work-experience .important-sentence {
+    font-size: 21px;
+    font-weight: 300;
+    color: #8000e9;
 }
