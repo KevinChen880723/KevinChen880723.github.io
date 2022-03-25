@@ -1,3 +1,18 @@
+p, li{
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+ul {
+    list-style:circle;
+    padding-left: 20px;
+    margin-left: 20px;
+}
+
+li {
+    margin: 20px;
+}
+
 #backgroundImg {
     margin: auto;
     width: 80%;
@@ -223,18 +238,72 @@
 }
 
 #WorkExperience .key-word {
-    font-size: 16px;
     font-weight: bold;
     color: #65cbfa;
 }
 
 #WorkExperience .important-sentence {
-    font-size: 16px;
     font-weight: bold;
     color: #b1b9ff;
 }
 
 /* ========================== Skills =========================== */
+
+#Skills .p-title {
+    font-size: 22px;
+    line-height: 33px;
+    margin: 30px 0;
+    font-weight: 700;
+    color: #444;
+}
+
+#Skills li {
+    font-size: 20px;
+    line-height: 33px;
+    margin: 30px 0;
+    color: #555;
+}
+
+#Skills .li-title {
+    font-weight: 700;
+}
+
+#Skills .english-container {
+    display: flexbox;
+}
+
+.english-container p {
+    display: inline-flex;
+}
+
+#Skills #toeic-certificate {
+    width: 0%;
+    display: block;
+    margin: auto;
+    box-shadow: 3px 3px 3px #999;
+    transition: width 0.3s 0s ease-in-out; 
+}
+
+#Skills #view-toeic-cert-container {
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#Skills #view-toeic-cert {
+    display: inline-flex;
+    padding: 10px 10px;
+    border-radius: 5px;
+    margin-left: 10px;
+    height: 20px;
+    color: white;
+    background-color: #aaa;
+    transition: background-color 0.2s 0 ease;
+}
+
+#Skills #view-toeic-cert:hover {
+    background-color: #666;
+}
 
 #Skills .progress-bar{
     display: block;
@@ -268,7 +337,15 @@
     position: relative;
 }
 
-#html-progress, #css-progress {
+#pytorch-progress, #numpy-progress {
+    width: 85%;
+}
+
+#opencv-progress {
+    width: 70%;
+}
+
+#aws-progress, #html-progress, #css-progress, #sklearn-progress, #pandas-progress {
     width: 50%;
 }
 
@@ -288,6 +365,10 @@
     margin-left: 1%;
 }
 
+.a-skill .skill-name {
+    color: #333;
+}
+
 .skill-progress .percentage-container {
     position: absolute;
     height: 100%;
@@ -300,4 +381,9 @@
 
 .progress-bar .skill-percentage {
     font-family: Arial, Helvetica, sans-serif;
+}
+
+.key-word-white-bkg {
+    font-weight: bold;
+    color: #ffae00;
 }
