@@ -387,3 +387,78 @@ li {
     font-weight: bold;
     color: #ffae00;
 }
+
+/* =============================== Portfolio =============================== */
+
+#l-botton, #r-botton {
+    /* opacity: 0; */
+    width: 100%;
+    /* background-color: red; */
+}
+
+.portfolio-contents-container {
+    margin: 20px 0;
+}
+
+#portfolio-title {
+    color: #222;
+    background-color: #333;
+    color: #fff;
+    font-size: 28px;
+    font-family:Arial, Helvetica, sans-serif;
+    line-height: 50px;
+    font-weight: bold;
+    text-align: middle;
+    width: 100%;
+    display: block;
+    margin: auto;
+    padding: 10px 0;
+    border-radius: 20px 20px 0 0;
+}
+
+#portfolio-container {
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    background-color: #555;
+    /* padding: 10px; */
+    margin: auto;
+    border-radius: 50px;
+    box-shadow: 5px 5px 5px #bbb;
+}
+#portfolio-container .botton-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* background-color: red; */
+    padding: 0 20px;
+    border-radius: 50px  0 0 50px ;
+    transition: background-color 0.3 0 ease;
+}
+
+#portfolio-container #r-botton-container {
+    border-radius: 0 50px 50px 0;
+}
+
+#portfolio-container .botton-container:hover {
+    background-color: #777;
+}
+
+#portfolio-container #portfolio-img {
+    width: 100%;
+    display: block;
+    margin: auto;
+}
+
+#portfolio-container #portfolio-description {
+    width: 100%;
+    display: block;
+    margin: auto;
+    text-align:justify;
+    color: #fff;
+    background-color: #333;
+    padding: 20px;
+    border-radius: 0 0 20px 20px;
+    box-sizing: border-box;
+}
