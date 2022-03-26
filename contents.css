@@ -69,9 +69,14 @@ li {
     text-align: middle;
 }
 
+.profile hr {
+    height: 0.00001vh;
+    width: 100%;
+}
+
 /* ========================= Educations =============================== */
 
-.profile .schools .one-school h4{
+.profile h4{
     color: #444;
     font-size: 1.2vw;
     font-family:Arial, Helvetica, sans-serif;
@@ -80,7 +85,7 @@ li {
     text-align: middle;
 }
 
-.profile .schools .one-school p{
+.profile p{
     color: #555;
     font-size: 1vw;
     font-family:Arial, Helvetica, sans-serif;
@@ -89,7 +94,13 @@ li {
     font-weight: 300;
 }
 
-.profile .schools .one-school .school-name {
+.profile .one-school {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.profile .school-name {
     font-weight: bold;
 }
 
@@ -100,7 +111,10 @@ li {
 }
 
 .profile .profile-info {
-    display: inline-block;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
     width: 80%;
     height: auto;
     background-color: #eee;
