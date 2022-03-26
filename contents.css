@@ -101,7 +101,7 @@ li {
 
 .contents .profile .profile-info .all-contact-info-container {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
 }
 
 .contents .profile .profile-info a {
@@ -431,10 +431,9 @@ li {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    /* background-color: red; */
     padding: 0 20px;
     border-radius: 50px  0 0 50px ;
-    transition: background-color 0.3 0 ease;
+    transition: background-color 0.2 s 0s ease;
 }
 
 #portfolio-container #r-botton-container {
