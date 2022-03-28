@@ -507,16 +507,43 @@ li {
     align-items: center;
 }
 
+#LearningNotes li {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
 #LearningNotes a {
     text-decoration: none;
     display: block;
-    font-size: 22px;
     line-height: 100%;
+    padding: 10px 20px;
+    border-radius: 10px;
+    transition: background-color 0.2s 0s ease;
+}
+
+#LearningNotes a:hover {
+    background-color: #eee;
+}
+
+#LearningNotes .note-description {
+    font-size: 22px;
     font-weight: 700;
     color: #444;
+    transition: color 0.2s 0s ease;
+}
+
+#LearningNotes .note-description:hover {
+    color: #000;
 }
 
 #LearningNotes .note-icon {
     height: 100%;
     padding-right: 10px;
+}
+
+#LearningNotes .notes-list-container {
+    width: 70%;
+    display: flex;
+    justify-content: space-between;
 }
