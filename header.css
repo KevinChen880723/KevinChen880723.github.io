@@ -72,3 +72,10 @@
 .header nav a:hover {
     background-color: #666;
 }
+
+@media screen and (max-width: 768px) {    
+    .header {
+        /* background-color: tomato; */
+        opacity: 0;
+    }
+}
