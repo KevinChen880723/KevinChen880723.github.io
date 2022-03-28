@@ -496,6 +496,11 @@ li {
 
 /* ============================ Learning Notes ============================ */
 
+#LearningNotes .LearningNotes-container {
+    display: flex;
+    justify-content: center;
+}
+
 #LearningNotes #notes-container {
     display: flex;
     flex-wrap: wrap;
@@ -519,11 +524,12 @@ li {
     line-height: 100%;
     padding: 10px 20px;
     border-radius: 10px;
+    /* margin-left: 20px; */
     transition: background-color 0.2s 0s ease;
 }
 
 #LearningNotes a:hover {
-    background-color: #eee;
+    background-color: #ddd;
 }
 
 #LearningNotes .note-description {
@@ -537,9 +543,44 @@ li {
     color: #000;
 }
 
+#LearningNotes .note-design {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    padding: 20px;
+    width: 6%;
+    background-color: #888;
+    border-radius: 20px 0 0 20px;
+    box-shadow: 3px 0 3px #999;
+}
+
+.note-design .design-word {
+    display: flex;
+    justify-content: center;
+    color: #fff;
+    font-size: 26px;
+}
+
 #LearningNotes .note-icon {
-    height: 100%;
-    padding-right: 10px;
+    height: 110%;
+    padding-right: 20px;
+}
+
+#LearningNotes .all-notes-larger-container {
+    width: 90%;
+    /* padding: 20px; */
+    border: solid 1px #aaa;
+    border-radius: 20px;
+    background-color: #eee;
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+    align-content: flex-start;
+}
+
+#LearningNotes li {
+    border-bottom: solid 1px #ccc;
 }
 
 #LearningNotes .notes-list-container {

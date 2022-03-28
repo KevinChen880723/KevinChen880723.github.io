@@ -1,7 +1,7 @@
 let portfolio_title_array = [
     "ITRI Depth Estimation Project",
     "IoT Device Controller: Front-end Website",
-    "IoT Device Controller: IoT Device Simulator",
+    "IoT Device Controller: System Architecture",
     "Smart Life Washing Machine",
     "HLS: NN Accelerator"
 ];
@@ -17,7 +17,7 @@ let portfolio_description_array = [
 let portfolio_imgName_array = [
     "./img/portfolio/depth-estimation.png",
     "./img/portfolio/iot-front-end.png",
-    "./img/portfolio/iot-simulator.png",
+    "./img/portfolio/iot-aws.png",
     "./img/portfolio/washingMachine.jpg",
     "./img/portfolio/hls.png"
 ]
