@@ -37,19 +37,20 @@ li {
 }
 
 .profile {
-    background-color: #eee;
-    position: fixed;
-    /* top: 7.5%; */
-    bottom: 0%;
+    position: absolute;
+    top: 100%;
+    /* bottom: 0%; */
     left: 0;
-    height: 94%;
+    height: 1900%;
     width: 20%;
+    background-color: #eee;
 
     display: flex;
     flex-direction: column;
     justify-content:flex-start;    
     align-items: center;
     box-shadow: 10px 10px 10px #999;
+    z-index: 1;
 }
 
 .profile > h2 {
@@ -533,7 +534,7 @@ li {
 }
 
 #LearningNotes .note-description {
-    font-size: 22px;
+    font-size: 1.6vw;
     font-weight: 700;
     color: #444;
     transition: color 0.2s 0s ease;
@@ -559,11 +560,11 @@ li {
     display: flex;
     justify-content: center;
     color: #fff;
-    font-size: 26px;
+    font-size: 2.2vw;
 }
 
 #LearningNotes .note-icon {
-    height: 110%;
+    height: 100%;
     padding-right: 20px;
 }
 
@@ -584,7 +585,7 @@ li {
 }
 
 #LearningNotes .notes-list-container {
-    width: 70%;
+    width: 100%;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
 }
