@@ -73,8 +73,11 @@
     background-color: #666;
 }
 
-/* @media screen and (max-width: 768px) {    
+@media screen and (max-width: 768px) {    
     .header {
         opacity: 0;
+        position: fixed;
+        top: -100%;
+        left: -100%;
     }
-} */
+}
