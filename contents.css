@@ -315,14 +315,10 @@ li {
     }
 
     .company-container {
-        display: inline-flex;
+        display: flex;
         position: relative;
         width: 70%;
         height: auto;
-    }
-
-    .company-container .company-icon {
-        align-self: center;
     }
 
     .company-container .date {
