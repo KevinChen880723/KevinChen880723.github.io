@@ -198,10 +198,6 @@ li {
     margin: 2% 5%;
 }
 
-.contents .content-body .wrap p {
-    margin: 18px 0;
-}
-
 #WorkExperience {
     position: relative;
 }
@@ -244,6 +240,7 @@ li {
     text-align: center;
     font-size: 1.2vw;
     text-decoration: none;
+    margin: 18px 0;
 }
 
 .hr-div {
@@ -259,12 +256,6 @@ li {
         position: fixed;
         top: -100%;
         left: -100%;
-    }
-
-    .vr-container {
-        display: flex;
-        width: 100%;
-        height: 100px;
     }
 }
 
@@ -320,7 +311,7 @@ li {
     .work-experiences-contents figure {
         align-items: center;
         flex-direction: column;
-        height: fit-content;
+        height: 300px;
     }
 
     .company-container {
@@ -332,6 +323,7 @@ li {
 
     .company-container .date {
         top: 0%;
+        margin: 0%;
         font-size: 3vw;  
         display: inline-flex;
         width: 30%;
@@ -339,6 +331,12 @@ li {
         text-align: left;
         text-decoration: none;
       }
+    }
+
+    .vr-container {
+        display: flex;
+        width: 100%;
+        height: 100%;
     }
 
     .vr-container .vr {
