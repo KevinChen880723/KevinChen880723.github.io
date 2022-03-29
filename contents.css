@@ -28,7 +28,7 @@ li {
     display: flex;
 }
 
-.profile #myProfile {
+#profile #myProfile {
     height: 11vw;
     /* display: block; */
     border-radius: 50%;
@@ -36,7 +36,7 @@ li {
     margin: 1.5vw 0;
 }
 
-.profile {
+#profile {
     position: absolute;
     top: 100%;
     /* bottom: 0%; */
@@ -53,7 +53,7 @@ li {
     z-index: 1;
 }
 
-.profile > h2 {
+#profile > h2 {
     color: #333;
     font-size: 2vw;
     font-family:Arial, Helvetica, sans-serif;
@@ -62,7 +62,7 @@ li {
     padding-top: 1.5vw;
 }
 
-.profile h3 {
+#profile h3 {
     color: #333;
     font-size: 1.5vw;
     font-family:Arial, Helvetica, sans-serif;
@@ -71,14 +71,14 @@ li {
     text-align: middle;
 }
 
-.profile hr {
+#profile hr {
     height: 0.00001vh;
     width: 100%;
 }
 
 /* ========================= Educations =============================== */
 
-.profile h4{
+#profile h4{
     display: flex;
     justify-content: center;
     width: 100%;
@@ -90,7 +90,7 @@ li {
     text-align: middle;
 }
 
-.profile p{
+#profile p{
     color: #555;
     font-size: 0.93vw;
     font-family:Arial, Helvetica, sans-serif;
@@ -99,13 +99,13 @@ li {
     font-weight: 300;
 }
 
-.profile .one-school {
+#profile .one-school {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
 }
 
-.profile .school-name {
+#profile .school-name {
     font-size: 1vw;
     font-weight: bold;
 }
@@ -116,7 +116,7 @@ li {
     display: block;
 }
 
-.profile .profile-info {
+#profile .profile-info {
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -130,38 +130,39 @@ li {
 
 /* ========================= One profile-info Way =============================== */
 
-.profile .profile-info .all-contact-info-container {
+#profile .profile-info .all-contact-info-container {
     display: flex;
     justify-content: space-between;
 }
 
-.profile .profile-info a {
+#profile .profile-info a {
     text-decoration: none;
     margin: 4% 0;
     width: 20%;
     transition: width 0.3s 0s ease;
 }
 
-.profile .profile-info a:hover {
+#profile .profile-info a:hover {
     width: 30%;
 }
 
-.profile .profile-info a img{
+#profile .profile-info a img{
     width: 100%;
 }
 
 /* ============================= Main Contents ================================== */
 
-.contents .content-body {
+.contents #content-body {
     margin-left: 20%;
     background-color: white;
     width: 80%;
     font-family: Arial, Helvetica, sans-serif;
     padding: 0 5%;
+    transition: background-color 0.2s 0s ease;
 }
 
 @media screen and (max-width: 768px) {    
-    .contents .content-body {
+    .contents #content-body {
         margin-left: 0;
         width: 100%;
     }
@@ -194,7 +195,7 @@ li {
     }
 }
 
-.contents .content-body .wrap, #WorkExperience {
+.contents #content-body .wrap, #WorkExperience {
     margin: 2% 5%;
 }
 
@@ -730,4 +731,126 @@ li {
         width: 100%;
         flex-direction: column;
     }
+}
+
+/* ================ RWD for the profile and manual button =========================== */
+@media screen and (min-width: 769px) {
+    #header-mobile {
+        top: -100%;
+        position: fixed;
+    }
+}
+@media screen and (max-width: 768px) {
+    #checkbox-profile, #checkbox-nav {
+        opacity: 0;
+        position: fixed;
+        top: -100%;
+    }
+    #header-mobile {
+        display: flex;
+        height: 8vh;
+        width: 100%;
+        background-color: #eee;
+        position: fixed;
+        top: 0;
+        justify-content: space-between;
+        align-items: center;
+        z-index: 2;
+        box-shadow: 0 0.5vh 0.5vh #999;
+    }
+
+    #header-mobile #modile-title {
+        color: #555;
+        font-size: 7vw;
+        font-family:Arial, Helvetica, sans-serif;
+        line-height: 3vw;
+        font-weight: bold;
+        padding-top: 1.5vw;
+    }
+
+    #header-mobile #label-profile {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 4vh;
+        width: 4vh;
+        margin-right: 2vh;
+    }
+
+    #label-profile img {
+        opacity: 0.8;
+        width: 80%;
+        height: 80%;
+    }
+
+    #header-mobile #label-nav {
+        display: flex;
+        height: 4vh;
+        width: 4vh;
+        margin-left: 2vh;
+    }
+
+    #label-nav hr {
+        width: 60%;
+        align-self: center;
+        color: #555;
+        box-shadow: 0 -1.1vh 0 #555,
+                    0 1.1vh 0 #555;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    #profile #myProfile {
+        height: 15vh;
+        box-shadow: 0px 3px 3px #aaa;
+    }
+
+    #profile {
+        position: fixed;
+        top: 8vh;
+        left: -100%;
+        width: 90%;
+        height: calc(92vh);
+        background-color: #eee;
+        justify-content:space-between;   
+        box-shadow: 0px 0 5px #999;
+        transition: left 0.3s 0s ease;
+    }
+
+    #profile > h2 {
+        color: #555;
+        font-size: 8vw;
+        padding-top: 3vw;
+        margin-top: 3vh;
+    }
+
+    #profile h3 {
+        font-size: 6vw;
+        line-height: 9vw;
+    }
+    /* ========================= Educations =============================== */
+
+    #profile h4{
+        font-size: 5vw;
+        line-height: 7.5vw;
+    }
+
+    #profile p{
+        font-size: 4vw;
+        line-height: 6vw;
+        font-weight: 300;
+    }
+
+    #profile .school-name {
+        font-size: 5.5vw;
+        line-height: 7.75vh;
+    }
+
+    /* ========================= profile-info Information =============================== */
+
+    #profile .profile-info {
+        margin: 0 0 6vw;
+        /* background-color: #ddd; */
+    }
+
 }

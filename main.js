@@ -48,6 +48,7 @@ window.onload = function() {
     let portfolio_title = document.getElementById("portfolio-title");
     let portfolio_img = document.getElementById("portfolio-img");
     let portfolio_description = document.getElementById("portfolio-description");
+    let checkbox_profile = document.getElementById("checkbox-profile");
 
     // Initialize some function 
     ckmates.onmouseover = function() {mouseOverCKmates()};
@@ -58,6 +59,7 @@ window.onload = function() {
     view_toeic_cert.onmouseout = function() {mouseOutToeicScore()};
     document.getElementById("l-botton-container").onclick = function() {left_botton()};
     document.getElementById("r-botton-container").onclick = function() {right_botton()};
+    checkbox_profile.onclick = function() {clickProfile()};
     
     // Initialize the contents in the portfolio section.
     portfolio_title.textContent = portfolio_title_array[portfolio_idx];
@@ -67,6 +69,17 @@ window.onload = function() {
     portfolio_description.textContent = portfolio_description_array[portfolio_idx];
 
     // Set the contents of the functions.
+    function clickProfile() {
+        if (checkbox_profile.checked) {
+            document.getElementById("profile").style.left = 0;
+            document.getElementById("content-body").style.backgroundColor = "#ccc";
+        }
+        else {
+            document.getElementById("profile").style.left = -100+"%";
+            document.getElementById("content-body").style.backgroundColor = "#fff";
+        }
+    }
+
     function mouseOverCKmates() {
         document.getElementById("ckmates-description").style.opacity = "1";
         document.getElementById("ckmates-description").style.padding = "20px";

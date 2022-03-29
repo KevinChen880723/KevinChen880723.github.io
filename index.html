@@ -15,7 +15,7 @@
         }
         @media screen and (max-width: 768px) {    
             body {
-                padding-top: 0%;
+                padding-top: 8vh;
             }
         }
     </style>
@@ -42,7 +42,7 @@
                 <div class="nav-button-container"><div class="nav-word-container">Learning Notes</div></div>
             </a>
         </nav>
-        <div class="profile">
+        <div id="profile">
             <h2>Yu-Kai Chen</h2>
             <img src="./img/personal.jpeg" alt="personal profile" id="myProfile">
 
@@ -82,10 +82,18 @@
             </div>
         </div>
     </div>
+
+    <div id="header-mobile">
+        <input type="checkbox" id="checkbox-profile">
+        <input type="checkbox" id="checkbox-nav">
+        <label for="checkbox-nav" id="label-nav"><hr></label>
+        <div id="modile-title">My Profile</div>
+        <label for="checkbox-profile" id="label-profile"><img src="./img/user.png" alt="User Icon"></label>
+    </div>
     
     <div class="contents">
 
-        <div class="content-body">
+        <div id="content-body">
             <div class="wrap" id="AboutMe">
                 <h2>About Me</h2>
                 <p>Hello, I'm Kevin, an M.S. student at the electronic and computer engineering department of NTUST! In my undergraduate, I learned numerous skills related to information technology such as IoT, cloud computing, embedded systems, machine learning, deep learning, and lots of programming languages. In the graduate program, I'm doing deep learning research related to ADAS, which can make the self-driving car safer. Besides, I have two internship experiences in CKmates and ITRI.In my study journey, I learned many things from the internet. I like to share my knowledge with others to contribute to society, so I have kept my notes online for the public since two years ago. Everyone on the internet can access my messages.</p>
