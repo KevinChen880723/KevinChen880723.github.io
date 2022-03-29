@@ -315,7 +315,7 @@ li {
     }
 
     .company-container {
-        display: flex;
+        display: inline-flex;
         position: relative;
         width: 70%;
         height: auto;
