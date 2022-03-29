@@ -22,23 +22,23 @@ let portfolio_imgName_array = [
     "./img/portfolio/hls.png"
 ]
 
-// let img_scale_ratio = [ 1.7560975609756098, 1, 2.16260162601626, 2.1105691056910567 ];
-let img_scale_ratio = [];
+let img_scale_ratio = [ 1.3592404075563698, 1.2255486322891498, 1.2265259255323544, 1.6181778205352153, 1 ];
+// let img_scale_ratio = [];
 
-console.log("hello");
-let img = new Image(), min_img_height = "99999", i = 0;
-for (i = 0 ; i < portfolio_imgName_array.length; i++) {
-    img.src = portfolio_imgName_array[i];
-    let normalized_height = img.height/img.width;
-    img_scale_ratio.push(normalized_height);
-    if (normalized_height < min_img_height) 
-        min_img_height = normalized_height;
-}
-for (i = 0; i < portfolio_imgName_array.length; i++) {
-    img_scale_ratio[i] /= min_img_height;
-}
+// console.log("hello");
+// let img = new Image(), min_img_height = "99999", i = 0;
+// for (i = 0 ; i < portfolio_imgName_array.length; i++) {
+//     img.src = portfolio_imgName_array[i];
+//     let normalized_height = img.height/img.width;
+//     img_scale_ratio.push(normalized_height);
+//     if (normalized_height < min_img_height) 
+//         min_img_height = normalized_height;
+// }
+// for (i = 0; i < portfolio_imgName_array.length; i++) {
+//     img_scale_ratio[i] /= min_img_height;
+// }
 
-console.log(img_scale_ratio);
+// console.log(img_scale_ratio);
 
 window.onload = function() {
     let portfolio_idx = 0;
