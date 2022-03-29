@@ -569,10 +569,20 @@ li {
 
 /* =============================== Portfolio =============================== */
 
-#l-botton, #r-botton {
-    /* opacity: 0; */
-    width: 5%;
-    /* background-color: red; */
+.botton-container .botton {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.botton-container .botton:hover > .botton-icon {
+    opacity: 0.5;
+}
+
+.botton-icon {
+    width: 70%;
+    transition: opacity 0.2s 0s ease;;
 }
 
 .portfolio-contents-container {
@@ -608,21 +618,31 @@ li {
     width: 100%;
     display: flex;
     justify-content: center;
-}
-#portfolio-container .botton-container {
-    display: flex;
-    width: 100%;
-    flex-direction: row;
-    justify-content: center;
-    padding: 20px 20px;
-    /* border-radius: 10px; */
-    background-color: #555;
-    transition: background-color 0.2s 0s ease;
+    
 }
 
-#portfolio-container .botton-container:hover {
-    background-color: #777;
-} 
+.img-and-bottons-container {
+    position: relative;
+}
+
+#portfolio-container .botton-container {
+    display: flex;
+    width: 5%;
+    height: 100%;
+    position: absolute;
+    top: 0%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#portfolio-container #l-botton-container {
+    left: -5%;
+}
+
+#portfolio-container #r-botton-container {
+    right: -5%;
+}
 
 #portfolio-container #portfolio-img {
     width: 100%;
