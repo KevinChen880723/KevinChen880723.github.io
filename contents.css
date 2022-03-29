@@ -320,6 +320,7 @@ li {
     .work-experiences-contents figure {
         align-items: center;
         flex-direction: column;
+        height: fit-content;
     }
 
     .company-container {
