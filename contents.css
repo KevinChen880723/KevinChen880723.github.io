@@ -321,9 +321,9 @@ li {
         height: auto;
     }
 
-    .company-container .company-icon {
+    /* .company-container .company-icon {
         align-self: center;
-    }
+    } */
 
     .company-container .date {
         top: 0%;
