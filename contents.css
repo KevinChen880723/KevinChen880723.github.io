@@ -160,12 +160,12 @@ li {
     padding: 0 5%;
 }
 
-@media screen and (max-width: 768px) {    
+/* @media screen and (max-width: 768px) {    
     .contents .content-body {
         margin-left: 0;
         width: 100%;
     }
-}
+} */
 
 .wrap h2 {
     font-size: 46px;
@@ -426,7 +426,7 @@ li {
     color: #ffae00;
 }
 
-@media screen and (max-width: 768px) {
+/* @media screen and (max-width: 768px) {
     #Skills .p-title {
         font-size: 22px;
         line-height: 33px;
@@ -565,7 +565,7 @@ li {
         font-weight: bold;
         color: #ffae00;
     }
-}
+} */
 
 /* =============================== Portfolio =============================== */
 
@@ -645,7 +645,7 @@ li {
     box-sizing: border-box;
 }
 
-@media screen and (max-width: 768px) {
+/* @media screen and (max-width: 768px) {
     #portfolio-title {
         font-size: 25px;
         line-height: 37.25px;
@@ -664,7 +664,7 @@ li {
         line-height: 24px;
     }
 
-}
+} */
 
 /* ============================ Learning Notes ============================ */
 
@@ -757,7 +757,7 @@ li {
 }
 
 
-@media screen and (max-width: 768px) {   
+/* @media screen and (max-width: 768px) {   
     
     #LearningNotes a {
         pointer-events: none;
@@ -784,4 +784,4 @@ li {
         width: 100%;
         flex-direction: column;
     }
-}
+} */
