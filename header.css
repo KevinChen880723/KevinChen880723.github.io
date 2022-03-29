@@ -80,3 +80,46 @@
         left: -100%;
     }
 }
+
+@media screen and (max-width: 768px) {
+    .header nav {
+        /* 要加這行才會真的讓<nav>底下的文字對齊右邊 */
+        width: 90%;
+        height: 92vh;
+        display: flex;
+        flex-direction: column;
+        padding-right: 0px;
+        position: fixed;
+        right: 0;
+        top: 8vh;
+        background-color: #eee;
+        box-shadow: -3px 0 3px #bbb;
+        transition: right 0.3s 0s ease;
+    }
+
+    .header nav .nav-button-container {
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        height: 8vh;
+        border-bottom: solid 2px #ccc;
+    }
+
+    .header nav .nav-button-container .nav-word-container {
+        width:fit-content;
+        color: #666;
+    }
+
+    .header nav a {
+        text-decoration: none;
+        display: flex;
+        justify-content: center;
+        font-size: 6vw;
+        border-radius: 5vw;
+        transition: background-color 0.1s 0s ease;
+    }
+
+    .header nav a:hover {
+        background-color: #666;
+    }
+}

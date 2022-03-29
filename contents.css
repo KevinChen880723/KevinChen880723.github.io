@@ -774,7 +774,7 @@ li {
         align-items: center;
         height: 4vh;
         width: 4vh;
-        margin-right: 2vh;
+        margin-left: 2vh;
     }
 
     #label-profile img {
@@ -787,7 +787,7 @@ li {
         display: flex;
         height: 4vh;
         width: 4vh;
-        margin-left: 2vh;
+        margin-right: 2vh;
     }
 
     #label-nav hr {

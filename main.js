@@ -49,6 +49,7 @@ window.onload = function() {
     let portfolio_img = document.getElementById("portfolio-img");
     let portfolio_description = document.getElementById("portfolio-description");
     let checkbox_profile = document.getElementById("checkbox-profile");
+    let checkbox_nav = document.getElementById("checkbox-nav");
 
     // Initialize some function 
     ckmates.onmouseover = function() {mouseOverCKmates()};
@@ -60,6 +61,7 @@ window.onload = function() {
     document.getElementById("l-botton-container").onclick = function() {left_botton()};
     document.getElementById("r-botton-container").onclick = function() {right_botton()};
     checkbox_profile.onclick = function() {clickProfile()};
+    checkbox_nav.onclick = function() {clickNav()};
     
     // Initialize the contents in the portfolio section.
     portfolio_title.textContent = portfolio_title_array[portfolio_idx];
@@ -76,6 +78,17 @@ window.onload = function() {
         }
         else {
             document.getElementById("profile").style.left = -100+"%";
+            document.getElementById("content-body").style.backgroundColor = "#fff";
+        }
+    }
+
+    function clickNav() {
+        if (checkbox_nav.checked) {
+            document.getElementById("navigator").style.right = 0;
+            document.getElementById("content-body").style.backgroundColor = "#ccc";
+        }
+        else {
+            document.getElementById("navigator").style.right = -100+"%";
             document.getElementById("content-body").style.backgroundColor = "#fff";
         }
     }
