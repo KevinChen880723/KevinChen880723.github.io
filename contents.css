@@ -208,13 +208,6 @@ li {
     width: 100%;
 }
 
-.companys .company {
-    width: 100%;
-    display: inline-flex;
-    flex-direction: column;
-    justify-content: center;
-}
-
 .work-experiences-contents #ckmates-icon, #itri-icon {
     width: 100%;
     border: solid #888 2px;
@@ -285,128 +278,52 @@ li {
     color: #b1b9ff;
 }
 
-/* @media screen and (max-width: 768px) {
-    .wrap h2 {
-        font-size: 46px;
-        margin: 30px 0;
-        font-weight: bold;
-        color: #222;
-    }
-
-    .wrap h3 {
-        font-size: 32px;
-        margin: 30px 0;
-        font-weight: bold;
-        color: #444;
-    }
-
-    .contents .content-body .wrap, #WorkExperience {
-        margin: 2% 5%;
-    }
-
-    .contents .content-body .wrap p {
-        margin: 18px 0;
-    }
-
-    #WorkExperience {
-        position: relative;
-    }
-
-    .work-experiences-contents {
-        margin: 10% 0;
-        display: flex;
-    }
-
-    .work-experiences-contents .companys {
-        width: 100%;
-        display: inline-flex;
-    }
-
+@media screen and (max-width: 768px) {
     .work-experiences-contents figure {
-        display: flex;
+        align-items: center;
         flex-direction: column;
-        width: 100%;
-        background-color: tomato;
-    }
-
-    .companys .company {
-        width: 100%;
-        display: inline-flex;
-        flex-direction: column;
-        justify-content: center;
-    }
-
-    .work-experiences-contents #ckmates-icon, #itri-icon {
-        width: 100%;
-        border: solid #888 2px;
-        border-radius: 30px;
-        padding: 5%;
-        box-shadow: 0px 3px 3px #ccc;
     }
 
     .company-container {
         display: inline-flex;
         position: relative;
-        width: 100%;
+        width: 70%;
     }
 
     .company-container .date {
-        display: inline;
-        position: absolute;
-        top: 110%;
-        left: 0%;
-        width: 100%;
-        text-align: center;
-        font-size: 1.2vw;
+        top: 0%;
+        font-size: 3vw;  
+        display: inline-flex;
+        width: 30%;
+        left: -30%;
+        text-align: left;
+      }
     }
 
     .hr-div {
-        width: 100%;
-        /* display: flex;
-        flex-direction: column;
-        justify-content: center; */
+        opacity: 0;
+        position: fixed;
+        top: -100%;
+        left: -100%;
     }
 
-    .hr-div hr {
+    .vr-container {
+        display: flex;
         width: 100%;
-        color: #ccc;
-        transform: rotate(90deg);
+        height: 100px;
+    }
+
+    .vr-container .vr {
+        display: flex;
+        width: 50%;
+        height: 100%;
+        border-right: solid 2px #ccc;
     }
 
     #WorkExperience .description {
-        line-height: 27px;
-        text-align: center;
-        border: solid #aaa 0px;
-        border-radius: 20px;
-        box-shadow: 4px 4px 4px #ccc;
-        background-color: #666;
-        color: #fff;
-        transition: height  0.2s 0s ease-in-out, 
-                    opacity 0.2s 0.2s ease-in-out, 
-                    border  0.2s 0.2s ease-in-out, 
-                    padding 0.2s 0.2s ease-in-out;
-        position: relative;
-        margin: 0 10%;
-        opacity: 0;
-        height: 0;
-        padding: 0px 20px;
+        margin: 0;
     }
-
-    #WorkExperience .description p {
-        opacity: 1;
-    }
-
-    #WorkExperience .key-word {
-        font-weight: bold;
-        color: #65cbfa;
-    }
-
-    #WorkExperience .important-sentence {
-        font-weight: bold;
-        color: #b1b9ff;
-    }
-
-} */
+}
 
 /* ========================== Skills =========================== */
 
