@@ -160,12 +160,12 @@ li {
     padding: 0 5%;
 }
 
-/* @media screen and (max-width: 768px) {    
+@media screen and (max-width: 768px) {    
     .contents .content-body {
         margin-left: 0;
         width: 100%;
     }
-} */
+}
 
 .wrap h2 {
     font-size: 46px;
@@ -665,7 +665,7 @@ li {
     box-sizing: border-box;
 }
 
-/* @media screen and (max-width: 768px) {
+@media screen and (max-width: 768px) {
     #portfolio-title {
         font-size: 25px;
         line-height: 37.25px;
@@ -677,14 +677,11 @@ li {
     }
 
     #portfolio-container #portfolio-description {
-        width: 100%;
-        text-align:left;
-        padding: 20px 20px;
         font-size: 16px;
         line-height: 24px;
     }
 
-} */
+}
 
 /* ============================ Learning Notes ============================ */
 
@@ -777,7 +774,7 @@ li {
 }
 
 
-/* @media screen and (max-width: 768px) {   
+@media screen and (max-width: 768px) {   
     
     #LearningNotes a {
         pointer-events: none;
@@ -804,4 +801,4 @@ li {
         width: 100%;
         flex-direction: column;
     }
-} */
+}
