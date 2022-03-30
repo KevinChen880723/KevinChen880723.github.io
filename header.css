@@ -74,8 +74,10 @@
     transition: background-color 0.1s 0s ease;
 }
 
-.header nav a:hover {
-    background-color: #666;
+@media screen and (min-width: 769px) {
+    .header nav a:hover {
+        background-color: #666;
+    }
 }
 
 @media screen and (max-width: 768px) {    
@@ -130,9 +132,5 @@
         font-size: 6vw;
         border-radius: 5vw;
         transition: background-color 0.1s 0s ease;
-    }
-
-    .header nav a:hover {
-        background-color: #666;
     }
 }

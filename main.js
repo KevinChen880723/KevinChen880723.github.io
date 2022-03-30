@@ -77,6 +77,8 @@ window.onload = function() {
         if (checkbox_profile.checked) {
             document.getElementById("profile").style.left = 0;
             document.getElementById("content-body").style.backgroundColor = "#ccc";
+            document.getElementById("nav-container").style.right = -100+"%";
+            checkbox_nav.checked = false;
         }
         else {
             document.getElementById("profile").style.left = -100+"%";
@@ -88,6 +90,8 @@ window.onload = function() {
         if (checkbox_nav.checked) {
             document.getElementById("nav-container").style.right = 0;
             document.getElementById("content-body").style.backgroundColor = "#ccc";
+            document.getElementById("profile").style.left = -100+"%";
+            checkbox_profile.checked = false;
         }
         else {
             document.getElementById("nav-container").style.right = -100+"%";
@@ -98,6 +102,7 @@ window.onload = function() {
     function clickNavgator() {
         document.getElementById("nav-container").style.right = -100+"%";
         document.getElementById("content-body").style.backgroundColor = "#fff";
+        checkbox_nav.checked = false;
     }
 
     function mouseOverCKmates() {
