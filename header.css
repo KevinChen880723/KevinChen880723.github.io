@@ -39,6 +39,11 @@
     opacity: 0.5;
 }
 
+.header #nav-container {
+    display: flex;
+    align-items: center;
+}
+
 .header nav {
     /* 要加這行才會真的讓<nav>底下的文字對齊右邊 */
     width: 100%;
@@ -82,19 +87,27 @@
 }
 
 @media screen and (max-width: 768px) {
-    .header nav {
-        /* 要加這行才會真的讓<nav>底下的文字對齊右邊 */
+    .header #nav-container {
+        display: flex;
+        align-items: flex-start;
         width: 90%;
         height: 92vh;
         display: flex;
         flex-direction: column;
         padding-right: 0px;
         position: fixed;
-        right: 0;
+        right: -100%;
         top: 8vh;
         background-color: #eee;
         box-shadow: -3px 0 3px #bbb;
         transition: right 0.3s 0s ease;
+    }
+
+    .header nav {
+        height: fit-content;
+        display: flex;
+        flex-direction: column;
+        padding-right: 0px;
     }
 
     .header nav .nav-button-container {

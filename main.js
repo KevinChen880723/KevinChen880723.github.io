@@ -50,6 +50,7 @@ window.onload = function() {
     let portfolio_description = document.getElementById("portfolio-description");
     let checkbox_profile = document.getElementById("checkbox-profile");
     let checkbox_nav = document.getElementById("checkbox-nav");
+    let navigator = document.getElementById("navigator");
 
     // Initialize some function 
     ckmates.onmouseover = function() {mouseOverCKmates()};
@@ -61,7 +62,8 @@ window.onload = function() {
     document.getElementById("l-botton-container").onclick = function() {left_botton()};
     document.getElementById("r-botton-container").onclick = function() {right_botton()};
     checkbox_profile.onclick = function() {clickProfile()};
-    checkbox_nav.onclick = function() {clickNav()};
+    checkbox_nav.onclick = function() {clickNavLabel()};
+    navigator.onclick = function() {clickNavgator()};
     
     // Initialize the contents in the portfolio section.
     portfolio_title.textContent = portfolio_title_array[portfolio_idx];
@@ -82,15 +84,20 @@ window.onload = function() {
         }
     }
 
-    function clickNav() {
+    function clickNavLabel() {
         if (checkbox_nav.checked) {
-            document.getElementById("navigator").style.right = 0;
+            document.getElementById("nav-container").style.right = 0;
             document.getElementById("content-body").style.backgroundColor = "#ccc";
         }
         else {
-            document.getElementById("navigator").style.right = -100+"%";
+            document.getElementById("nav-container").style.right = -100+"%";
             document.getElementById("content-body").style.backgroundColor = "#fff";
         }
+    }
+
+    function clickNavgator() {
+        document.getElementById("nav-container").style.right = -100+"%";
+        document.getElementById("content-body").style.backgroundColor = "#fff";
     }
 
     function mouseOverCKmates() {

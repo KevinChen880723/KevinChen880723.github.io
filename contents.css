@@ -761,7 +761,7 @@ li {
 
     #header-mobile #modile-title {
         color: #555;
-        font-size: 7vw;
+        font-size: 4vh;
         font-family:Arial, Helvetica, sans-serif;
         line-height: 3vw;
         font-weight: bold;
@@ -812,27 +812,26 @@ li {
         width: 90%;
         height: calc(92vh);
         background-color: #eee;
-        justify-content:space-between;   
+        justify-content:flex-start;   
         box-shadow: 0px 0 5px #999;
         transition: left 0.3s 0s ease;
     }
 
     #profile > h2 {
         color: #555;
-        font-size: 8vw;
-        padding-top: 3vw;
-        margin-top: 3vh;
+        font-size: 7vw;
+        line-height: 9vh;
     }
 
     #profile h3 {
-        font-size: 6vw;
-        line-height: 9vw;
+        font-size: 5vw;
+        line-height: 7.5vw;
     }
     /* ========================= Educations =============================== */
 
     #profile h4{
-        font-size: 5vw;
-        line-height: 7.5vw;
+        font-size: 4.5vw;
+        line-height: 6.75vw;
     }
 
     #profile p{
@@ -842,15 +841,14 @@ li {
     }
 
     #profile .school-name {
-        font-size: 5.5vw;
-        line-height: 7.75vh;
+        font-size: 5vw;
+        line-height: 7.5vh;
     }
 
     /* ========================= profile-info Information =============================== */
 
     #profile .profile-info {
-        margin: 0 0 6vw;
+        margin: 0 0 2vh;
         /* background-color: #ddd; */
     }
-
 }
