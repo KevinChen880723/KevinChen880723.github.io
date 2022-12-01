@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
     <title>Main Page</title>
     <link rel="stylesheet" href="./reset.css">
     <link rel="stylesheet" href="./header.css">
@@ -13,6 +13,11 @@
         body {
             padding-top: 5%;
         }
+        @media screen and (max-width: 768px) {    
+            body {
+                padding-top: 8vh;
+            }
+        }
     </style>
 </head>
 <body>
@@ -20,24 +25,26 @@
         <div class="home-icon-container">
             <a href="#" class="home-icon"><img src="./img/home_icon.png" alt="icon"></a>
         </div>
-        <nav>
-            <a href="#AboutMe">
-                <div class="nav-button-container"><div class="nav-word-container">About Me</div></div>
-            </a>
-            <a href="#WorkExperience">
-                <div class="nav-button-container"><div class="nav-word-container">Work Experience</div></div>
-            </a>
-            <a href="#Skills">
-                <div class="nav-button-container"><div class="nav-word-container">Skills</div></div>
-            </a>
-            <a href="#Portfolios">
-                <div class="nav-button-container"><div class="nav-word-container">Portfolios</div></div>
-            </a>
-            <a href="#LearningNotes">
-                <div class="nav-button-container"><div class="nav-word-container">Learning Notes</div></div>
-            </a>
-        </nav>
-        <div class="profile">
+        <div id="nav-container">
+            <nav id="navigator">
+                <a href="#AboutMe">
+                    <div class="nav-button-container"><div class="nav-word-container">About Me</div></div>
+                </a>
+                <a href="#WorkExperience">
+                    <div class="nav-button-container"><div class="nav-word-container">Work Experience</div></div>
+                </a>
+                <a href="#Skills">
+                    <div class="nav-button-container"><div class="nav-word-container">Skills</div></div>
+                </a>
+                <a href="#Portfolios">
+                    <div class="nav-button-container"><div class="nav-word-container">Portfolios</div></div>
+                </a>
+                <a href="#LearningNotes">
+                    <div class="nav-button-container"><div class="nav-word-container">Learning Notes</div></div>
+                </a>
+            </nav>
+        </div>
+        <div id="profile">
             <h2>Yu-Kai Chen</h2>
             <img src="./img/personal.jpeg" alt="personal profile" id="myProfile">
 
@@ -77,10 +84,18 @@
             </div>
         </div>
     </div>
+
+    <div id="header-mobile">
+        <input type="checkbox" id="checkbox-profile">
+        <input type="checkbox" id="checkbox-nav">
+        <label for="checkbox-profile" id="label-profile"><img src="./img/user.png" alt="User Icon"></label>
+        <div id="modile-title">My Profile</div>
+        <label for="checkbox-nav" id="label-nav"><hr></label>
+    </div>
     
     <div class="contents">
 
-        <div class="content-body">
+        <div id="content-body">
             <div class="wrap" id="AboutMe">
                 <h2>About Me</h2>
                 <p>Hello, I'm Kevin, an M.S. student at the electronic and computer engineering department of NTUST! I'm researching <span class="main-field-key-word">deep learning</span> - <span class="bold-word">unsupervised domain adaptation</span> in my graduate program, which aims to reduce performance degradation caused by domain shift problems. Before my graduate program, I was in an internship at <span class="company-key-word">ITRI</span> and was in charge of building a monocular depth estimation deep learning model without labelled data. Besides researching deep learning, I also have experience in <span class="main-field-key-word">IoT</span>, <span class="main-field-key-word">cloud computing</span>, <span class="main-field-key-word">embedded systems</span>, and a working experience in a cloud computing company called <span class="company-key-word">CKmates</span>. And because theoretical knowledge is crucial for writing efficient code, I also practice <span class="theoritical-key-word">data structure</span>, <span class="theoritical-key-word">algorithms</span>, and other critical theoretical knowledge!</p>
@@ -93,15 +108,24 @@
                     <div class="work-experiences-contents">
                         <div class="companys">
                             <figure>
+                                <div class="vr-container">
+                                    <div class="vr"></div>
+                                </div>
                                 <div class="hr-div border-hr"><hr></div>
                                 <div class="company-container">
                                     <img src="./img/CKmates_logo.png" alt="CKmates Logo" class="company-icon" id="ckmates-icon">
                                     <p class="date">2019/09 - 2020/01</p>
                                 </div>
+                                <div class="vr-container">
+                                    <div class="vr"></div>
+                                </div>
                                 <div class="hr-div"><hr></div>
                                 <div class="company-container">
                                     <img src="./img/ITRI_logo.png" alt="ITRI Logo" class="company-icon" id="itri-icon">
                                     <p class="date">2021/03 - 2021/08</p>
+                                </div>
+                                <div class="vr-container">
+                                    <div class="vr"></div>
                                 </div>
                                 <div class="hr-div border-hr"><hr></div>
     
@@ -131,7 +155,8 @@
                 <h3>Languages</h3>
                 <p><span class="p-title">Mandarin:</span> Native Speaker</p>
                 <div class="english-container">
-                    <span class="p-title">English:</span> <p>Upper Intermediate  <span id="toeic-score">(TOEIC: <span class="key-word-white-bkg">825</span> / 990)</span></p>
+                    <p class="p-title">English:</p> <p>Upper Intermediate</p>  
+                    <p>(TOEIC: <span class="key-word-white-bkg">825</span> / 990)</p>
                     <div id="view-toeic-cert-container">
                         <div id="view-toeic-cert">View Certificate</div>
                     </div>
@@ -253,19 +278,27 @@
             <div class="wrap" id="Portfolios">
                 <h2>Portfolios</h2>
                 <div id="portfolio-container">
-                    <div id="l-botton-container" class="botton-container">
-                        <img src="./img/portfolio/left-botton.png" alt="Left Botton" id="l-botton">
-                    </div>
                     <div class="portfolio-contents-container">
-                        <div id="portfolio-title"></div>
-                        <img src="./img/portfolio/depth-estimation.png" alt="Portfolio Display" id="portfolio-img">
-                        <div id="portfolio-description"></div>
-                    </div>
-                    <div id="r-botton-container" class="botton-container">
-                        <img src="./img/portfolio/right-botton.png" alt="Right Botton" id="r-botton">
-                    </div>
-                    <div id="all-portfolios-display">
+                        <div id="portfolio-title-container"> 
+                            <div id="portfolio-title"></div>
+                        </div>
+                        
+                        <div class="img-and-bottons-container">
+                            <div id="l-botton-container" class="botton-container">
+                                <div class="botton">
+                                    <img src="./img/portfolio/left-botton.png" alt="Left Botton" class="botton-icon">
+                                </div>
+                            </div>
+        
+                            <img src="./img/portfolio/depth-estimation.png" alt="Portfolio Display" id="portfolio-img">
 
+                            <div id="r-botton-container" class="botton-container">
+                                <div class="botton">
+                                    <img src="./img/portfolio/right-botton.png" alt="Right Botton" class="botton-icon">
+                                </div>
+                            </div>
+                        </div>
+                        <div id="portfolio-description"></div>
                     </div>
                 </div>
             </div>

@@ -22,23 +22,23 @@ let portfolio_imgName_array = [
     "./img/portfolio/hls.png"
 ]
 
-// let img_scale_ratio = [ 1.7560975609756098, 1, 2.16260162601626, 2.1105691056910567 ];
-let img_scale_ratio = [];
+let img_scale_ratio = [ 1.3592404075563698, 1.2255486322891498, 1.2265259255323544, 1.6181778205352153, 1 ];
+// let img_scale_ratio = [];
 
-console.log("hello");
-let img = new Image(), min_img_height = "99999", i = 0;
-for (i = 0 ; i < portfolio_imgName_array.length; i++) {
-    img.src = portfolio_imgName_array[i];
-    let normalized_height = img.height/img.width;
-    img_scale_ratio.push(normalized_height);
-    if (normalized_height < min_img_height) 
-        min_img_height = normalized_height;
-}
-for (i = 0; i < portfolio_imgName_array.length; i++) {
-    img_scale_ratio[i] /= min_img_height;
-}
+// console.log("hello");
+// let img = new Image(), min_img_height = "99999", i = 0;
+// for (i = 0 ; i < portfolio_imgName_array.length; i++) {
+//     img.src = portfolio_imgName_array[i];
+//     let normalized_height = img.height/img.width;
+//     img_scale_ratio.push(normalized_height);
+//     if (normalized_height < min_img_height) 
+//         min_img_height = normalized_height;
+// }
+// for (i = 0; i < portfolio_imgName_array.length; i++) {
+//     img_scale_ratio[i] /= min_img_height;
+// }
 
-console.log(img_scale_ratio);
+// console.log(img_scale_ratio);
 
 window.onload = function() {
     let portfolio_idx = 0;
@@ -48,6 +48,9 @@ window.onload = function() {
     let portfolio_title = document.getElementById("portfolio-title");
     let portfolio_img = document.getElementById("portfolio-img");
     let portfolio_description = document.getElementById("portfolio-description");
+    let checkbox_profile = document.getElementById("checkbox-profile");
+    let checkbox_nav = document.getElementById("checkbox-nav");
+    let navigator = document.getElementById("navigator");
 
     // Initialize some function 
     ckmates.onmouseover = function() {mouseOverCKmates()};
@@ -58,6 +61,9 @@ window.onload = function() {
     view_toeic_cert.onmouseout = function() {mouseOutToeicScore()};
     document.getElementById("l-botton-container").onclick = function() {left_botton()};
     document.getElementById("r-botton-container").onclick = function() {right_botton()};
+    checkbox_profile.onclick = function() {clickProfile()};
+    checkbox_nav.onclick = function() {clickNavLabel()};
+    navigator.onclick = function() {clickNavgator()};
     
     // Initialize the contents in the portfolio section.
     portfolio_title.textContent = portfolio_title_array[portfolio_idx];
@@ -67,6 +73,38 @@ window.onload = function() {
     portfolio_description.textContent = portfolio_description_array[portfolio_idx];
 
     // Set the contents of the functions.
+    function clickProfile() {
+        if (checkbox_profile.checked) {
+            document.getElementById("profile").style.left = 0;
+            document.getElementById("content-body").style.backgroundColor = "#ccc";
+            document.getElementById("nav-container").style.right = -100+"%";
+            checkbox_nav.checked = false;
+        }
+        else {
+            document.getElementById("profile").style.left = -100+"%";
+            document.getElementById("content-body").style.backgroundColor = "#fff";
+        }
+    }
+
+    function clickNavLabel() {
+        if (checkbox_nav.checked) {
+            document.getElementById("nav-container").style.right = 0;
+            document.getElementById("content-body").style.backgroundColor = "#ccc";
+            document.getElementById("profile").style.left = -100+"%";
+            checkbox_profile.checked = false;
+        }
+        else {
+            document.getElementById("nav-container").style.right = -100+"%";
+            document.getElementById("content-body").style.backgroundColor = "#fff";
+        }
+    }
+
+    function clickNavgator() {
+        document.getElementById("nav-container").style.right = -100+"%";
+        document.getElementById("content-body").style.backgroundColor = "#fff";
+        checkbox_nav.checked = false;
+    }
+
     function mouseOverCKmates() {
         document.getElementById("ckmates-description").style.opacity = "1";
         document.getElementById("ckmates-description").style.padding = "20px";
